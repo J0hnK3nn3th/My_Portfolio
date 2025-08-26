@@ -1,0 +1,212 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - John Kenneth Salgado</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+</head>
+<body>
+    <!-- Include Header -->
+    {% include 'structures/header.html' %}
+
+    <!-- About Hero Section -->
+    <section id="about-hero" class="about-hero-section">
+        <!-- Background Shapes -->
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        
+        <!-- Background Text -->
+        <div class="bg-text">ABOUT</div>
+        
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 about-content">
+                    <div class="section-title animate-on-scroll" data-delay="0.2s">
+                        ABOUT ME
+                    </div>
+                    
+                    <h1 class="about-heading animate-on-scroll" data-delay="0.4s">
+                        IT Services Specialist & Technology Enthusiast
+                    </h1>
+                    
+                    <p class="about-description animate-on-scroll" data-delay="0.6s">
+                        Passionate about delivering innovative IT solutions and driving digital transformation. 
+                        With expertise in system administration, network management, and technical support.
+                    </p>
+                    
+                    <div class="stats-row animate-on-scroll" data-delay="0.8s">
+                        <div class="stat-item">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 about-image animate-on-scroll" data-delay="1s">
+                    <div class="text-center">
+                        <img src="{% static 'img/JKS.jpg' %}" alt="John Kenneth Salgado" class="about-profile-image rounded-circle shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-heading text-center animate-on-scroll" data-delay="0.2s">
+                        Technical Skills
+                    </h2>
+                    <p class="section-subtitle text-center animate-on-scroll" data-delay="0.4s">
+                        My expertise spans across various technologies and platforms
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row skills-grid">
+                <div class="col-lg-4 col-md-6 skill-category animate-on-scroll" data-delay="0.6s">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>System Administration</h3>
+                        <ul class="skill-list">
+                            <li>Windows Server Management</li>
+                            <li>Linux System Administration</li>
+                            <li>Active Directory</li>
+                            <li>Virtualization (VMware, Hyper-V)</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 skill-category animate-on-scroll" data-delay="0.8s">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Networking</h3>
+                        <ul class="skill-list">
+                            <li>Network Infrastructure</li>
+                            <li>Router & Switch Configuration</li>
+                            <li>VPN & Security</li>
+                            <li>Network Monitoring</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 skill-category animate-on-scroll" data-delay="1s">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Cybersecurity</h3>
+                        <ul class="skill-list">
+                            <li>Security Audits</li>
+                            <li>Incident Response</li>
+                            <li>Compliance Management</li>
+                            <li>Security Tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-heading text-center animate-on-scroll" data-delay="0.2s">
+                        Professional Experience
+                    </h2>
+                </div>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item animate-on-scroll" data-delay="0.4s">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - Present</div>
+                        <h3>Senior IT Specialist</h3>
+                        <h4>Tech Solutions Inc.</h4>
+                        <p>Leading IT infrastructure projects, managing system deployments, and providing technical leadership to junior team members.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item animate-on-scroll" data-delay="0.6s">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - 2022</div>
+                        <h3>IT Support Engineer</h3>
+                        <h4>Digital Systems Corp.</h4>
+                        <p>Provided technical support, managed network infrastructure, and implemented security protocols for enterprise clients.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item animate-on-scroll" data-delay="0.8s">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2018 - 2020</div>
+                        <h3>Junior IT Technician</h3>
+                        <h4>Startup Tech</h4>
+                        <p>Started career in IT support, hardware maintenance, and basic network troubleshooting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section id="contact-cta" class="contact-cta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="cta-heading animate-on-scroll" data-delay="0.2s">
+                        Ready to Work Together?
+                    </h2>
+                    <p class="cta-description animate-on-scroll" data-delay="0.4s">
+                        Let's discuss how I can help with your IT needs
+                    </p>
+                    <div class="cta-buttons animate-on-scroll" data-delay="0.6s">
+                        <button class="btn btn-custom btn-primary-custom">
+                            <i class="fas fa-envelope"></i> CONTACT ME
+                        </button>
+                        <button class="btn btn-custom btn-outline-custom">
+                            <i class="fas fa-download"></i> DOWNLOAD CV
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom JavaScript -->
+    <script src="{% static 'js/main.js' %}"></script>
+
+    <!-- Include Footer -->
+    {% include 'structures/footer.html' %}
+</body>
+</html>
