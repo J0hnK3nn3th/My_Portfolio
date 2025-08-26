@@ -17,6 +17,41 @@
     background: var(--primary-gradient);
 }
 
+/* Footer section spacing and alignment */
+.footer-section .row {
+    margin: 0;
+}
+
+.footer-section .col-lg-4,
+.footer-section .col-lg-2,
+.footer-section .col-lg-3,
+.footer-section .col-md-6 {
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Company Info section */
+.footer-section .col-lg-4:first-child {
+    margin-right: 1rem;
+}
+
+/* Quick Links section */
+.footer-section .col-lg-2 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Contact Info section */
+.footer-section .col-lg-3:nth-child(3) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Message Me section */
+.footer-section .col-lg-3:last-child {
+    margin-left: 1rem;
+}
+
 .footer-brand h3 {
     background: var(--primary-gradient);
     -webkit-background-clip: text;
@@ -140,5 +175,50 @@
     
     .social-links {
         justify-content: center;
+    }
+    
+    /* Mobile spacing adjustments */
+    .footer-section .col-lg-4,
+    .footer-section .col-lg-2,
+    .footer-section .col-lg-3,
+    .footer-section .col-md-6 {
+        padding: 0 1rem;
+        margin-bottom: 2.5rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    /* Tablet spacing adjustments */
+    .footer-section .col-lg-4,
+    .footer-section .col-lg-2,
+    .footer-section .col-lg-3,
+    .footer-section .col-md-6 {
+        padding: 0 1.25rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Ensure consistent spacing between sections */
+.footer-section h5 {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.footer-section h5::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: var(--secondary-color);
+}
+
+/* Add subtle borders between sections on larger screens */
+@media (min-width: 992px) {
+    .footer-section .col-lg-4:not(:last-child),
+    .footer-section .col-lg-2:not(:last-child),
+    .footer-section .col-lg-3:not(:last-child) {
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
     }
 }
