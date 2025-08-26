@@ -1,0 +1,306 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - John Kenneth Salgado</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'css/services.css' %}">
+</head>
+<body>
+    <!-- Include Header -->
+    {% include 'structures/header.html' %}
+
+    <!-- Services Hero Section -->
+    <section id="services-hero" class="services-hero-section">
+        <!-- Background Shapes -->
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        
+        <!-- Background Text -->
+        <div class="bg-text">SERVICES</div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="section-title animate-on-scroll" data-delay="0.2s">
+                        MY SERVICES
+                    </div>
+                    
+                    <h1 class="services-heading animate-on-scroll" data-delay="0.4s">
+                        Comprehensive IT Solutions for Your Business
+                    </h1>
+                    
+                    <p class="services-description animate-on-scroll" data-delay="0.6s">
+                        From system administration to cybersecurity, I provide end-to-end IT services 
+                        to help your business thrive in the digital age.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services Section -->
+    <section id="core-services" class="core-services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-heading text-center animate-on-scroll" data-delay="0.2s">
+                        Core Services
+                    </h2>
+                    <p class="section-subtitle text-center animate-on-scroll" data-delay="0.4s">
+                        Professional IT services tailored to your specific needs
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row services-grid">
+                <div class="col-lg-4 col-md-6 service-item animate-on-scroll" data-delay="0.6s">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>System Administration</h3>
+                        <p>Comprehensive server management, maintenance, and optimization for Windows and Linux environments.</p>
+                        <ul class="service-features">
+                            <li>Windows Server Management</li>
+                            <li>Linux System Administration</li>
+                            <li>Active Directory Services</li>
+                            <li>System Monitoring & Maintenance</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price">$75</span>
+                            <span class="period">/hour</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 service-item animate-on-scroll" data-delay="0.8s">
+                    <div class="service-card featured">
+                        <div class="featured-badge">Most Popular</div>
+                        <div class="service-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Network Infrastructure</h3>
+                        <p>Design, implementation, and management of robust network solutions for businesses of all sizes.</p>
+                        <ul class="service-features">
+                            <li>Network Design & Planning</li>
+                            <li>Router & Switch Configuration</li>
+                            <li>VPN & Security Implementation</li>
+                            <li>Network Performance Optimization</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price">$85</span>
+                            <span class="period">/hour</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 service-item animate-on-scroll" data-delay="1s">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Cybersecurity</h3>
+                        <p>Protect your business with comprehensive security assessments, implementation, and monitoring.</p>
+                        <ul class="service-features">
+                            <li>Security Audits & Assessments</li>
+                            <li>Firewall Configuration</li>
+                            <li>Incident Response Planning</li>
+                            <li>Security Policy Development</li>
+                        </ul>
+                        <div class="service-price">
+                            <span class="price">$95</span>
+                            <span class="period">/hour</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Services Section -->
+    <section id="additional-services" class="additional-services-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-heading text-center animate-on-scroll" data-delay="0.2s">
+                        Additional Services
+                    </h2>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 col-md-6 service-item animate-on-scroll" data-delay="0.4s">
+                    <div class="service-card-horizontal">
+                        <div class="service-icon-small">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Cloud Solutions</h3>
+                            <p>Migrate to the cloud with AWS, Azure, or Google Cloud Platform. Includes setup, migration, and ongoing management.</p>
+                            <div class="service-price-small">
+                                <span class="price">$65</span>
+                                <span class="period">/hour</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-md-6 service-item animate-on-scroll" data-delay="0.6s">
+                    <div class="service-card-horizontal">
+                        <div class="service-icon-small">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>IT Support & Maintenance</h3>
+                            <p>24/7 technical support, troubleshooting, and preventive maintenance to keep your systems running smoothly.</p>
+                            <div class="service-price-small">
+                                <span class="price">$55</span>
+                                <span class="period">/hour</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-md-6 service-item animate-on-scroll" data-delay="0.8s">
+                    <div class="service-card-horizontal">
+                        <div class="service-icon-small">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>Data Backup & Recovery</h3>
+                            <p>Comprehensive backup strategies, disaster recovery planning, and data protection solutions.</p>
+                            <div class="service-price-small">
+                                <span class="price">$70</span>
+                                <span class="period">/hour</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-md-6 service-item animate-on-scroll" data-delay="1s">
+                    <div class="service-card-horizontal">
+                        <div class="service-icon-small">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="service-content">
+                            <h3>IT Consulting</h3>
+                            <p>Strategic IT planning, technology roadmaps, and digital transformation consulting for business growth.</p>
+                            <div class="service-price-small">
+                                <span class="price">$90</span>
+                                <span class="period">/hour</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Process Section -->
+    <section id="service-process" class="service-process-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="section-heading text-center animate-on-scroll" data-delay="0.2s">
+                        How I Work
+                    </h2>
+                    <p class="section-subtitle text-center animate-on-scroll" data-delay="0.4s">
+                        A systematic approach to delivering exceptional IT solutions
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row process-steps">
+                <div class="col-lg-3 col-md-6 process-step animate-on-scroll" data-delay="0.6s">
+                    <div class="process-card">
+                        <div class="process-number">01</div>
+                        <div class="process-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Discovery</h3>
+                        <p>Understanding your business needs, current infrastructure, and project requirements.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 process-step animate-on-scroll" data-delay="0.8s">
+                    <div class="process-card">
+                        <div class="process-number">02</div>
+                        <div class="process-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>Planning</h3>
+                        <p>Developing comprehensive solutions, timelines, and implementation strategies.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 process-step animate-on-scroll" data-delay="1s">
+                    <div class="process-card">
+                        <div class="process-number">03</div>
+                        <div class="process-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3>Implementation</h3>
+                        <p>Executing the solution with attention to detail and minimal business disruption.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 process-step animate-on-scroll" data-delay="1.2s">
+                    <div class="process-card">
+                        <div class="process-number">04</div>
+                        <div class="process-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3>Support</h3>
+                        <p>Ongoing maintenance, monitoring, and support to ensure optimal performance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="services-cta" class="services-cta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="cta-heading animate-on-scroll" data-delay="0.2s">
+                        Ready to Get Started?
+                    </h2>
+                    <p class="cta-description animate-on-scroll" data-delay="0.4s">
+                        Let's discuss your IT needs and find the perfect solution for your business
+                    </p>
+                    <div class="cta-buttons animate-on-scroll" data-delay="0.6s">
+                        <button class="btn btn-custom btn-primary-custom">
+                            <i class="fas fa-calendar"></i> SCHEDULE CONSULTATION
+                        </button>
+                        <button class="btn btn-custom btn-outline-custom">
+                            <i class="fas fa-file-alt"></i> GET QUOTE
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom JavaScript -->
+    <script src="{% static 'js/main.js' %}"></script>
+
+    <!-- Include Footer -->
+    {% include 'structures/footer.html' %}
+</body>
+</html>
